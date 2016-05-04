@@ -1,0 +1,22 @@
+{
+  "name": "codeacademy-nodeadv-api",
+  "version": "1.0.0",
+  "description": "Expedia Code Academy NodeAdv API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ancizararenas/expcodeaca-nodeadv.git"
+  },
+  "author": "Ancizar Arenas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ancizararenas/expcodeaca-nodeadv/issues"
+  },
+  "homepage": "https://github.com/ancizararenas/expcodeaca-nodeadv#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
