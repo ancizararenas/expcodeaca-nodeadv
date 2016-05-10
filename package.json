@@ -4,6 +4,7 @@
   "description": "Expedia Code Academy NodeAdv API",
   "main": "app.js",
   "scripts": {
+    "start": "PORT=8080 node ./bin/server | node_modules/bunyan/bin/bunyan",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/ancizararenas/expcodeaca-nodeadv#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "body-parser": "^1.15.0",
+    "bunyan": "^1.8.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14"
   }
 }
