@@ -40,10 +40,19 @@ Your homework is to attempt to inject our application routes into our server, by
 
 Each of you must create a pull request against the dev branch by saving your changes and adding all of your files to the git VCS by using the following commands :
 
-    git add .    // add and mark all modified/newly created files to be be tracked by git
+    git add .   // add and mark all modified/newly created files to be be tracked by git
 
-    git status // make sure all your modifications made are present
+    git status    // make sure all your modifications made are present
 
-    git chekout -b <yourname>-<modulethree> origin/dev
+    git checkout -b <yourname>-modulethree origin/dev   // this will pull all your local changes to your new feature branch    
 
-    git commit -a -m "<yourname> - <commit message goes here>"
+    git commit -a -m "<yourname> - <commit message goes here>"    // should see something like  3 files changed, 56 insertions(+), 11 deletions(-)
+
+    git push origin <your branch name> e.g : git push origin anci-modulethree   // should see something like  * [new branch]      anci-modulethree -> anci-modulethree
+
+
+    go to https://github.com/ancizararenas/expcodeaca-nodeadv
+
+    you should see your branch in the recently pushed branches section like below :
+
+    ![image](courseMaterial/img/gitNewBranch.png?raw=true "Git New Branch Image")
