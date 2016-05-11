@@ -34,6 +34,8 @@ For this task, we want to be a bit more protective of our application. We want t
 
 ### HOMEWORK EXPLANATION
 
+Due Data : 16/05/16 18:00 Latest please so that I may have sufficient time to review
+
 In continuation to our work to date in our attempt of beginning to configure our application to be correctly structured and modularized, now that we have configured our application to use express correctly, we want to begging to create our routes.
 
 Your homework is to attempt to inject our application routes into our server, by injecting the file we created ./lib/routes.js and implement logging throughout our routes so that we can trace in our logs when requests are made to those endpoints.
@@ -51,8 +53,14 @@ Each of you must create a pull request against the dev branch by saving your cha
     git push origin <your branch name> e.g : git push origin anci-modulethree   // should see something like  * [new branch]      anci-modulethree -> anci-modulethree
 
 
-    go to https://github.com/ancizararenas/expcodeaca-nodeadv
+go to https://github.com/ancizararenas/expcodeaca-nodeadv
 
-    you should see your branch in the recently pushed branches section like below :
+you should see your branch in the recently pushed branches section. Click on "Compare & Pull Request" button like below :
 
-    ![image](https://raw.github.com/ancizararenas/expcodeaca-nodeadv/anci-masterdev-modulethree/courseMaterial/img/gitNewBranch.png)
+![GitHub New Branch](../img/gitNewBranch.png)
+
+update your pull request details using the below guide as an example and create your pull request for reviewing
+
+![GitHub New Branch](../img/gitNewPullRequest.png)
+
+Thats it folks!! See you next session
