@@ -55,4 +55,4 @@ Each of you must create a pull request against the dev branch by saving your cha
 
     you should see your branch in the recently pushed branches section like below :
 
-    ![ScreenShot](https://raw.github.com/ancizararenas/expcodeaca-nodeadv/anci-masterdev-modulethree/courseMaterial/img/gitNewBranch.png)
+    ![image](https://raw.github.com/ancizararenas/expcodeaca-nodeadv/anci-masterdev-modulethree/courseMaterial/img/gitNewBranch.png)
