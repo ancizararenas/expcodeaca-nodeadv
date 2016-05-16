@@ -2,7 +2,6 @@
   "name": "codeacademy-nodeadv-api",
   "version": "1.0.0",
   "description": "Expedia Code Academy NodeAdv API",
-  "main": "app.js",
   "scripts": {
     "start": "node ./bin/server | node_modules/bunyan/bin/bunyan",
     "test": "echo \"Error: no test specified\" && exit 1"
