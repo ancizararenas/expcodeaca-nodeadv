@@ -1,5 +1,5 @@
 {
-  "name": "codeacademy-nodeadv-api",
+  "name": "cc-nodeadv-api",
   "version": "1.0.0",
   "description": "Expedia Code Academy NodeAdv API",
   "main": "app.js",
