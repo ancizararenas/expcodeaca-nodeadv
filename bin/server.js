@@ -39,7 +39,7 @@ function instantiateRouter() {
   app.use('/', routes);
 
   app.listen(port);
-  log.info('Listening on: %', port);
+  log.info('Listening on: %s', port);
 };
 
 console.log;
