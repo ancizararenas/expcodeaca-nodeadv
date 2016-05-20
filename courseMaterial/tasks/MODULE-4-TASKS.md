@@ -36,7 +36,7 @@ Before we can retrieve a product, we will first need to create one.
 
 ### HOMEWORK EXPLANATION
 
-Due Data : 16/05/16 18:00 Latest please so that I may have sufficient time to review
+Due Data : 24/05/16 18:00 Latest please so that I may have sufficient time to review
 
 In continuation to our work to date, we now want to begin extracting our logic within our routes. Your homework is to continue the work from class and get to a point where you have extracted the domain logic from the routes and extracted into a file within the resources directory previously created.
 
