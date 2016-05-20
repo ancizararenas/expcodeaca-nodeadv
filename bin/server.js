@@ -1,13 +1,12 @@
 'use strict';
 
-var mongoose   = require('mongoose');
-var express    = require('express');
-var app        = express();
-var bodyParser = require('body-parser');
-var mongoURI   = process.env.MONGO || 'mongodb://localhost:27017/cc-nodeadv-api';
-var appInfo    = require('../package.json');
-var routes     = require('../lib/routes');
-var log   = require('../middleware/logger').child({
+var mongoose    = require('mongoose');
+var express     = require('express');
+var app         = express();
+var bodyParser  = require('body-parser');
+var mongoURI    = process.env.MONGO || 'mongodb://localhost:27017/nodeadvca';
+var routes      = require('../lib/routes');
+var log         = require('../middleware/logger').child({
   level : 'info',
   component : '[BIN-SERVER]'
 });
