@@ -12,7 +12,7 @@ var log         = require('../middleware/logger').child({
 // set port for server
 var port = process.env.PORT || 3000;
 
-var routes      = require('../routes.js');
+var routes      = require('../lib/routes.js');
 
 // connect app to database
 log.info('Connecting to DB: %s', mongoURI);
