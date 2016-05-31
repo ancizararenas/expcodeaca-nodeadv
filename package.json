@@ -1,0 +1,26 @@
+{
+  "name": "cc-nodeadv-api",
+  "version": "1.0.0",
+  "description": "Expedia Code Academy NodeAdv API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/server | node_modules/bunyan/bin/bunyan",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ancizararenas/expcodeaca-nodeadv.git"
+  },
+  "author": "Ancizar Arenas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ancizararenas/expcodeaca-nodeadv/issues"
+  },
+  "homepage": "https://github.com/ancizararenas/expcodeaca-nodeadv#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bunyan": "^1.8.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.4.14"
+  }
+}
