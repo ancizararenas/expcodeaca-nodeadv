@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/server | node_modules/bunyan/bin/bunyan",
+    "start:dev": "nodemon ./bin/server | bunyan",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
