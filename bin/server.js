@@ -47,7 +47,7 @@ function instantiateServer() {
   });
 
   // register application routes
-  routes.register(router);
+  routes.register(router, mongoose);
 
   // all of our routes will be prefixed with /{apiName}
   app.use('/', router);
