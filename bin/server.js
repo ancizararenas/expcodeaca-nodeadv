@@ -20,7 +20,7 @@ mongoose.connection.on('error', function(err) {
 });
 
 mongoose.connection.on('open', function() {
-  log.info('successful connected to DB : %s', mongoURI);
+  log.info('successful connection to DB : %s', mongoURI);
   return instantiateServer();
 });
 
@@ -47,7 +47,7 @@ function instantiateServer() {
   });
 
   // register application routes
-  routes.register(router);
+  routes.register(router, mongoose);
 
   // all of our routes will be prefixed with /{apiName}
   app.use('/', router);
@@ -57,9 +57,3 @@ function instantiateServer() {
 
   log.info('server started and listening on port : %s', port);
 }
-
-//TODO :: IMPLEMENT SERVER API KEY FOR SECURITY
-
-//TODO :: IMPLEMENT UNIQUE UUID FOR ALL REQUESTS
-
-//TODO :: IMPLEMENT API VERSION INTO HEADERS
