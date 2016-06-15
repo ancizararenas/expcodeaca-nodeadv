@@ -41,19 +41,19 @@ Product.prototype.get = function(req, done) {
 Product.prototype.getById = function(id, done) {
   log.info({productId : id},
     {message : 'about to get single product from model'});
-    debugger
   Model.findOne({_id : 'PR-' + id}, function(err, product) {
-    debugger
     if (err || !(product)) {
       var error = new Error('No product found with id:' + id);
       error.statusCode = 404;
       log.error(
-        {message : 'error encountered retrieving product with id: ' + id + ' from model'},
+        {message : 'error encountered retrieving product ' +
+          'with id: ' + id + ' from model'},
           {error : err || error});
       return done(err || error);
     }
     log.info(
-      {message : 'successfully retrieved product with id: ' + id + ' from model'});
+      {message : 'successfully retrieved ' +
+        'product with id: ' + id + ' from model'});
     done(null, product);
     });
 };
@@ -70,15 +70,12 @@ Product.prototype.create = function(req, body, done) {
     // this creates new product object of type ProductSchema
     var product = new Schemas.productsSchema();
     var category = new Schemas.categoriesSchema();
-    debugger
+
     Helper.setCategoryValues(category, body);
-    debugger
     Helper.setProductValues(product, category, body);
-    debugger
     Helper.setDefaultProductValues(product, category, body);
 
     product.save(function(err, storedProduct) {
-      debugger
       if (err || storedProduct._doc === 'undefined') {
         var error = new Error('Error encounterd storing product');
         error.statusCode = 500;

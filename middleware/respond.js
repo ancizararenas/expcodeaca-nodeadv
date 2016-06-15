@@ -7,7 +7,6 @@ var log = require('../middleware/logger').child({
     });
 
 respond = module.exports = function(err, req, res, next) {
-debugger
   if (err || (res.statusCode > 201)) {
     var error = {};
     error.statusCode = err.statusCode || res.statusCode || 500;
@@ -17,7 +16,7 @@ debugger
     return res.status(error.statusCode).json({message : error.message});
   }
 
-  log.info({productId : id}, {message : 'request successfully processed'}, {responseBody : res});
+  log.info({message : 'request successfully processed'}, {responseBody : res});
   res.status(res.statusCode || 200).json(res);
   next();
 };
