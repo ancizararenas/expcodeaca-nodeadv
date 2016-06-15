@@ -19,7 +19,8 @@ CategoriesSchema.add({
 
 ProductsSchema.add({
   title : {type : String, required: true},
-  _id : {type : String, required: true, unique : true, index : true, uppercase : true},
+  _id : {type : String, required: true,
+      unique : true, index : true, uppercase : true},
   description : {type : String, required : true},
   price : {
     grossValue : {type : Number, required : true},

@@ -5,7 +5,10 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/server | node_modules/bunyan/bin/bunyan",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test istanbul cover _mocha test/resources/*/*.js test/models/*/*.js test/lib/*.js test/middleware/*.js | istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
+    "jshint": "jshint -c .jshintrc --exclude-path .gitignore .",
+    "code-style": "jscs -p google bin/ lib/ middleware/ resources/ test/ helpers/",
+    "coverage": "open coverage/lcov-report/*.html"
   },
   "repository": {
     "type": "git",
@@ -19,8 +22,21 @@
   "homepage": "https://github.com/ancizararenas/expcodeaca-nodeadv#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
-    "bunyan": "^1.8.1",
+    "bunyan": "^1.8.1",    
     "express": "^4.13.4",
     "mongoose": "^4.4.14"
-  }
+  },
+  "devDependencies": {
+    "jshint": "^2.7.0",
+    "pre-commit": "^1.0.7",
+    "jscs": "^1.13.1",
+    "istanbul": "^0.3.14",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "pre-commit": [
+    "jshint",
+    "code-style",
+    "test"
+  ]
 }
